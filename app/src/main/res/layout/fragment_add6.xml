@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.Add1Fragment">
+
+
+    <ImageButton
+        android:id="@+id/btnLeftSixth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/image_view"
+        android:background="@android:color/transparent"
+        android:src="@drawable/arrow_left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTambahDataSixth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/tambah_data"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLeftSixth" />
+
+    <TextView
+        android:id="@+id/tvNoBank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/no_bank"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/tvTambahDataSixth"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvTambahDataSixth"
+        app:layout_constraintTop_toBottomOf="@+id/tvTambahDataSixth" />
+
+    <EditText
+        android:id="@+id/etNoBank"
+        android:layout_width="360dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints="name"
+        android:background="@drawable/bg_btn_shadow"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="@string/ketik_no_bank"
+        android:inputType="text"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColorHint="#546E7A"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvNoBank"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvNoBank"
+        app:layout_constraintTop_toBottomOf="@+id/tvNoBank"
+        tools:ignore="TextFields" />
+
+    <TextView
+        android:id="@+id/tvNoRekBank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/no_rekening_bank"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/etNoBank"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etNoBank"
+        app:layout_constraintTop_toBottomOf="@+id/etNoBank" />
+
+    <EditText
+        android:id="@+id/etNoRekBank"
+        android:layout_width="360dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_btn_shadow"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:autofillHints="name"
+        android:hint="@string/ketik_no_rekening_bank"
+        android:inputType="text"
+        android:textColorHint="#546E7A"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvNoRekBank"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvNoRekBank"
+        app:layout_constraintTop_toBottomOf="@+id/tvNoRekBank"
+        tools:ignore="TextFields" />
+
+    <TextView
+        android:id="@+id/tvKartu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/kartu"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/etNoRekBank"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etNoRekBank"
+        app:layout_constraintTop_toBottomOf="@+id/etNoRekBank" />
+
+    <Button
+        android:id="@+id/btnKartu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/choose_file"
+        android:textSize="9sp"
+        app:layout_constraintEnd_toEndOf="@id/tvKartu"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/tvKartu"
+        app:layout_constraintTop_toBottomOf="@id/tvKartu"
+        tools:ignore="SmallSp" />
+
+
+    <TextView
+        android:id="@+id/tvBiografi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Biografi"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/btnKartu"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnKartu"
+        app:layout_constraintTop_toBottomOf="@+id/btnKartu" />
+
+    <EditText
+        android:id="@+id/etBiografi"
+        android:layout_width="360dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_btn_shadow"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:autofillHints="name"
+        android:hint="@string/ketik_biografi"
+        android:inputType="text"
+        android:paddingStart="20dp"
+        android:textColorHint="#546E7A"
+        android:paddingEnd="20dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvBiografi"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvBiografi"
+        app:layout_constraintTop_toBottomOf="@+id/tvBiografi"
+        tools:ignore="TextFields" />
+
+    <TextView
+        android:id="@+id/tvVvip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/vvip_status"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/etBiografi"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etBiografi"
+        app:layout_constraintTop_toBottomOf="@+id/etBiografi" />
+
+    <EditText
+        android:id="@+id/etVvip"
+        android:layout_width="360dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints="name"
+        android:background="@drawable/bg_btn_shadow"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="@string/pilih_vvip_status"
+        android:inputType="text"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColorHint="#546E7A"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvVvip"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvVvip"
+        app:layout_constraintTop_toBottomOf="@+id/tvVvip"
+        tools:ignore="TextFields" />
+
+    <TextView
+        android:id="@+id/tvCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/check_cha"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/etVvip"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etVvip"
+        app:layout_constraintTop_toBottomOf="@+id/etVvip" />
+
+    <EditText
+        android:id="@+id/etCheck"
+        android:layout_width="360dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints="name"
+        android:background="@drawable/bg_btn_shadow"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="ketik check cha"
+        android:inputType="text"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColorHint="#546E7A"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvCheck"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvCheck"
+        app:layout_constraintTop_toBottomOf="@+id/tvCheck"
+        tools:ignore="TextFields" />
+
+    <TextView
+        android:id="@+id/tvSelanjutnyaSixth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/selanjutnya"
+        android:textColor="@color/purple_500"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/etCheck"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etCheck"
+        app:layout_constraintTop_toBottomOf="@+id/etCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

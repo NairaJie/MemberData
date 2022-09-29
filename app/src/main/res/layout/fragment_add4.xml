@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.Add1Fragment">
+
+
+    <ImageButton
+        android:id="@+id/btnLeftfourth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/image_view"
+        android:background="@android:color/transparent"
+        android:src="@drawable/arrow_left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTambahDataFourth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/tambah_data"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLeftfourth" />
+
+    <TextView
+        android:id="@+id/tvMetodePembayaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/metode_pembayaran"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/tvTambahDataFourth"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvTambahDataFourth"
+        app:layout_constraintTop_toBottomOf="@+id/tvTambahDataFourth" />
+
+    <EditText
+        android:id="@+id/etMetodePembayaran"
+        android:layout_width="360dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_btn_shadow"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:autofillHints="name"
+        android:hint="@string/pilih_metode_pembayaran"
+        android:inputType="text"
+        android:textColorHint="#546E7A"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvMetodePembayaran"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvMetodePembayaran"
+        app:layout_constraintTop_toBottomOf="@+id/tvMetodePembayaran"
+        tools:ignore="TextFields" />
+
+
+    <TextView
+        android:id="@+id/tvBuktiPembayaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/bukti_pembayaran"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/etMetodePembayaran"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etMetodePembayaran"
+        app:layout_constraintTop_toBottomOf="@+id/etMetodePembayaran" />
+
+    <Button
+        android:id="@+id/btnBukti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/choose_file"
+        android:textSize="9sp"
+        app:layout_constraintEnd_toEndOf="@id/tvBuktiPembayaran"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/tvBuktiPembayaran"
+        app:layout_constraintTop_toBottomOf="@id/tvBuktiPembayaran"
+        tools:ignore="SmallSp" />
+
+
+    <TextView
+        android:id="@+id/tvNilaiCr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/nilai_cr"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/btnBukti"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnBukti"
+        app:layout_constraintTop_toBottomOf="@+id/btnBukti" />
+
+    <EditText
+        android:id="@+id/etNilaiCr"
+        android:layout_width="360dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_btn_shadow"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:autofillHints="name"
+        android:hint="@string/ketik_nilai_cr"
+        android:inputType="text"
+        android:textColorHint="#546E7A"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvNilaiCr"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvNilaiCr"
+        app:layout_constraintTop_toBottomOf="@+id/tvNilaiCr"
+        tools:ignore="TextFields" />
+
+    <TextView
+        android:id="@+id/tvNilaiCashback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/nilai_cashback"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/etNilaiCr"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etNilaiCr"
+        app:layout_constraintTop_toBottomOf="@+id/etNilaiCr" />
+
+    <EditText
+        android:id="@+id/etNilaiCashback"
+        android:layout_width="360dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_btn_shadow"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:autofillHints="name"
+        android:hint="ketik nilai cashback"
+        android:inputType="text"
+        android:paddingStart="20dp"
+        android:textColorHint="#546E7A"
+        android:paddingEnd="20dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvNilaiCashback"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvNilaiCashback"
+        app:layout_constraintTop_toBottomOf="@+id/tvNilaiCashback"
+        tools:ignore="TextFields" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/status"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/etNilaiCashback"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etNilaiCashback"
+        app:layout_constraintTop_toBottomOf="@+id/etNilaiCashback" />
+
+    <EditText
+        android:id="@+id/etStatus"
+        android:layout_width="360dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints="name"
+        android:background="@drawable/bg_btn_shadow"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="@string/pilih_status"
+        android:inputType="text"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColorHint="#546E7A"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvStatus"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvStatus"
+        app:layout_constraintTop_toBottomOf="@+id/tvStatus"
+        tools:ignore="TextFields" />
+
+    <TextView
+        android:id="@+id/tvNoTelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/no_telp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/etStatus"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etStatus"
+        app:layout_constraintTop_toBottomOf="@+id/etStatus" />
+
+    <EditText
+        android:id="@+id/etNoTelp"
+        android:layout_width="360dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints="name"
+        android:background="@drawable/bg_btn_shadow"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="@string/ketik_no_telp"
+        android:inputType="text"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColorHint="#546E7A"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvNoTelp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvNoTelp"
+        app:layout_constraintTop_toBottomOf="@+id/tvNoTelp"
+        tools:ignore="TextFields" />
+
+    <TextView
+        android:id="@+id/tvSelanjutnyaFourth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/selanjutnya"
+        android:textColor="@color/purple_500"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/etNoTelp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etNoTelp"
+        app:layout_constraintTop_toBottomOf="@+id/etNoTelp" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

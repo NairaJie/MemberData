@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.Add1Fragment">
+
+
+    <ImageButton
+        android:id="@+id/btnLeftFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/image_view"
+        android:background="@android:color/transparent"
+        android:src="@drawable/arrow_left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTambahData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/tambah_data"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLeftFirst" />
+
+    <TextView
+        android:id="@+id/tvIdAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/id"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/tvTambahData"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvTambahData"
+        app:layout_constraintTop_toBottomOf="@+id/tvTambahData" />
+
+    <EditText
+        android:id="@+id/etId"
+        android:layout_width="360dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints="name"
+        android:background="@drawable/bg_btn_shadow"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="@string/ketik_id"
+        android:inputType="text"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColorHint="#546E7A"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvIdAdd"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvIdAdd"
+        app:layout_constraintTop_toBottomOf="@+id/tvIdAdd"
+        tools:ignore="TextFields" />
+
+    <TextView
+        android:id="@+id/tvKode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/kode"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/etId"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etId"
+        app:layout_constraintTop_toBottomOf="@+id/etId" />
+
+    <EditText
+        android:id="@+id/etKode"
+        android:layout_width="360dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_btn_shadow"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:autofillHints="name"
+        android:hint="@string/ketik_kode"
+        android:inputType="text"
+        android:textColorHint="#546E7A"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvKode"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvKode"
+        app:layout_constraintTop_toBottomOf="@+id/tvKode"
+        tools:ignore="TextFields" />
+
+    <TextView
+        android:id="@+id/tvNameAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/nama"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/etKode"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etKode"
+        app:layout_constraintTop_toBottomOf="@+id/etKode" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="360dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_btn_shadow"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:autofillHints="name"
+        android:hint="@string/ketik_nama"
+        android:inputType="text"
+        android:textColorHint="#546E7A"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvNameAdd"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvNameAdd"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameAdd"
+        tools:ignore="TextFields" />
+
+    <TextView
+        android:id="@+id/tvAlamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/alamat"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/etName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etName"
+        app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+    <EditText
+        android:id="@+id/etAlamat"
+        android:layout_width="360dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_btn_shadow"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:autofillHints="name"
+        android:hint="@string/ketik_alamat"
+        android:inputType="text"
+        android:paddingStart="20dp"
+        android:textColorHint="#546E7A"
+        android:paddingEnd="20dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvAlamat"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvAlamat"
+        app:layout_constraintTop_toBottomOf="@+id/tvAlamat"
+        tools:ignore="TextFields" />
+
+    <TextView
+        android:id="@+id/tvIdKota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/id_kota"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/etAlamat"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etAlamat"
+        app:layout_constraintTop_toBottomOf="@+id/etAlamat" />
+
+    <EditText
+        android:id="@+id/etIdKota"
+        android:layout_width="360dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints="name"
+        android:background="@drawable/bg_btn_shadow"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="@string/ketik_id_kota"
+        android:inputType="text"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColorHint="#546E7A"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvIdKota"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvIdKota"
+        app:layout_constraintTop_toBottomOf="@+id/tvIdKota"
+        tools:ignore="TextFields" />
+
+    <TextView
+        android:id="@+id/tvTempatLahir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/tempat_lahir"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/etIdKota"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etIdKota"
+        app:layout_constraintTop_toBottomOf="@+id/etIdKota" />
+
+    <EditText
+        android:id="@+id/etTempatLahir"
+        android:layout_width="360dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints="name"
+        android:background="@drawable/bg_btn_shadow"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="@string/ketik_tempat_lahir"
+        android:inputType="text"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColorHint="#546E7A"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvTempatLahir"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvTempatLahir"
+        app:layout_constraintTop_toBottomOf="@+id/tvTempatLahir"
+        tools:ignore="TextFields" />
+
+    <TextView
+        android:id="@+id/tvSelanjutnyafirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/selanjutnya"
+        android:textColor="@color/purple_500"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/etTempatLahir"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etTempatLahir"
+        app:layout_constraintTop_toBottomOf="@+id/etTempatLahir" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

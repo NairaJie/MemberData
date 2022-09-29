@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.Add1Fragment">
+
+
+    <ImageButton
+        android:id="@+id/btnLeftsecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/image_view"
+        android:background="@android:color/transparent"
+        android:src="@drawable/arrow_left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTambahDataSc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/tambah_data"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLeftsecond" />
+
+    <TextView
+        android:id="@+id/tvTanggalLahir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/tanggal_lahir"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/tvTambahDataSc"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvTambahDataSc"
+        app:layout_constraintTop_toBottomOf="@+id/tvTambahDataSc" />
+
+    <EditText
+        android:id="@+id/etTanggalLahir"
+        android:layout_width="360dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_btn_shadow"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:autofillHints="name"
+        android:hint="@string/ketik_tanggal_lahir"
+        android:inputType="datetime"
+        android:textColorHint="#546E7A"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvTanggalLahir"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvTanggalLahir"
+        app:layout_constraintTop_toBottomOf="@+id/tvTanggalLahir"
+        tools:ignore="TextFields" />
+
+    <TextView
+        android:id="@+id/tvJenisKelamin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/jenis_kelamin"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/etTanggalLahir"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etTanggalLahir"
+        app:layout_constraintTop_toBottomOf="@+id/etTanggalLahir" />
+
+    <RadioButton
+        android:id="@+id/rbLaki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:contextClickable="true"
+        android:text="@string/laki_laki"
+        app:layout_constraintEnd_toEndOf="@+id/tvJenisKelamin"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvJenisKelamin"
+        app:layout_constraintTop_toBottomOf="@+id/tvJenisKelamin" />
+
+    <RadioButton
+        android:id="@+id/rbPerempuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:contextClickable="true"
+        android:text="@string/perempuan"
+        app:layout_constraintBottom_toBottomOf="@+id/rbLaki"
+        app:layout_constraintStart_toEndOf="@id/rbLaki"
+        app:layout_constraintTop_toBottomOf="@+id/tvJenisKelamin"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+        <TextView
+        android:id="@+id/tvTanggalBergabung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/alamat"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/rbLaki"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/rbLaki"
+        app:layout_constraintTop_toBottomOf="@+id/rbLaki" />
+
+    <EditText
+        android:id="@+id/etTanggalBergabung"
+        android:layout_width="360dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_btn_shadow"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:autofillHints="name"
+        android:hint="@string/ketik_tanggal_bergabung"
+        android:inputType="text"
+        android:paddingStart="20dp"
+        android:textColorHint="#546E7A"
+        android:paddingEnd="20dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvTanggalBergabung"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvTanggalBergabung"
+        app:layout_constraintTop_toBottomOf="@+id/tvTanggalBergabung"
+        tools:ignore="TextFields" />
+
+    <TextView
+        android:id="@+id/tvFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/foto"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/etTanggalBergabung"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etTanggalBergabung"
+        app:layout_constraintTop_toBottomOf="@+id/etTanggalBergabung" />
+
+    <Button
+        android:id="@+id/btnFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/choose_file"
+        android:textSize="9sp"
+        app:layout_constraintEnd_toEndOf="@id/tvFoto"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/tvFoto"
+        app:layout_constraintTop_toBottomOf="@id/tvFoto"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/tvJenisDokumen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/tempat_lahir"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/btnFoto"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnFoto"
+        app:layout_constraintTop_toBottomOf="@+id/btnFoto" />
+
+    <EditText
+        android:id="@+id/etJenisDokumen"
+        android:layout_width="360dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints="name"
+        android:background="@drawable/bg_btn_shadow"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="@string/pilih_dokumen"
+        android:inputType="text"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColorHint="#546E7A"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvJenisDokumen"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvJenisDokumen"
+        app:layout_constraintTop_toBottomOf="@+id/tvJenisDokumen"
+        tools:ignore="TextFields" />
+
+    <TextView
+        android:id="@+id/tvNoIdDokumen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="No ID Dokumen"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/etJenisDokumen"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etJenisDokumen"
+        app:layout_constraintTop_toBottomOf="@+id/etJenisDokumen" />
+
+    <EditText
+        android:id="@+id/etNoIdDokumen"
+        android:layout_width="360dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints="name"
+        android:background="@drawable/bg_btn_shadow"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="@string/ketik_no_id_dokumen"
+        android:inputType="text"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColorHint="#546E7A"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvNoIdDokumen"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvNoIdDokumen"
+        app:layout_constraintTop_toBottomOf="@+id/tvNoIdDokumen"
+        tools:ignore="TextFields" />
+
+    <TextView
+        android:id="@+id/tvSelanjutnyaSc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="@string/selanjutnya"
+        android:textColor="@color/purple_500"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/etNoIdDokumen"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etNoIdDokumen"
+        app:layout_constraintTop_toBottomOf="@+id/etNoIdDokumen" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
