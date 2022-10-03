@@ -20,6 +20,7 @@ class Add1Fragment : Fragment() {
         button.setOnClickListener {
             findNavController().navigate(R.id.action_add1Fragment_to_add2Fragment)
         }
+
         return view
 
     }

@@ -1,9 +1,605 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activity.DetailActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/btnLeftDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/image_view"
+            android:background="@android:color/transparent"
+            android:src="@drawable/arrow_left"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.044"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvDataMemberDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/data_member"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.131"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnLeftDetail" />
+
+        <TextView
+            android:id="@+id/tvEditData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="132dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/edit_data"
+            android:textColor="@color/purple_500"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvDataMemberDetail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvDataMemberDetail"
+            app:layout_constraintTop_toTopOf="@+id/tvDataMemberDetail"
+            app:layout_constraintVertical_bias="0.631" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:elevation="20dp"
+            app:cardBackgroundColor="@color/grey"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDataMemberDetail">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp">
+
+
+                <TextView
+                    android:id="@+id/tvIdMemberDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:text="@string/id_member_060600"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteY="0dp" />
+
+                <TextView
+                    android:id="@+id/tvKodeMember"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/kode_member_0002"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/tvIdMemberDetail"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@id/tvIdMemberDetail"
+                    app:layout_constraintTop_toBottomOf="@id/tvIdMemberDetail" />
+
+                <TextView
+                    android:id="@+id/tvNameDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/nama_mark_lee"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/tvKodeMember"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@id/tvKodeMember"
+                    app:layout_constraintTop_toBottomOf="@id/tvKodeMember" />
+
+                <TextView
+                    android:id="@+id/tvAlamatDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/alamat_seoul"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/tvNameDetail"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@id/tvNameDetail"
+                    app:layout_constraintTop_toBottomOf="@id/tvNameDetail" />
+
+                <TextView
+                    android:id="@+id/tvIDKotaDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/id_kota_104362"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/tvAlamatDetail"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@id/tvAlamatDetail"
+                    app:layout_constraintTop_toBottomOf="@id/tvAlamatDetail" />
+
+                <TextView
+                    android:id="@+id/tvTempatLahirDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/tempat_lahir_canada"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/tvIDKotaDetail"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@id/tvIDKotaDetail"
+                    app:layout_constraintTop_toBottomOf="@id/tvIDKotaDetail" />
+
+                <TextView
+                    android:id="@+id/tvTanggalLahirDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/tanggal_lahir_02_08_1999"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/tvTempatLahirDetail"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@id/tvTempatLahirDetail"
+                    app:layout_constraintTop_toBottomOf="@id/tvTempatLahirDetail" />
+
+                <TextView
+                    android:id="@+id/tvJenisKelaminDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/jenis_kelamin_laki_laki"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/tvTanggalLahirDetail"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@id/tvTanggalLahirDetail"
+                    app:layout_constraintTop_toBottomOf="@id/tvTanggalLahirDetail" />
+
+                <TextView
+                    android:id="@+id/tvTanggalBergabungDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/tanggal_bergabung_28_05_2022"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/tvJenisKelaminDetail"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@id/tvJenisKelaminDetail"
+                    app:layout_constraintTop_toBottomOf="@id/tvJenisKelaminDetail" />
+
+                <TextView
+                    android:id="@+id/tvFotoDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/foto_mark_jpg"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/tvTanggalBergabungDetail"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@id/tvTanggalBergabungDetail"
+                    app:layout_constraintTop_toBottomOf="@id/tvTanggalBergabungDetail" />
+
+                <TextView
+                    android:id="@+id/tvIdSponsorDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/id_sponsor_25467254"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/tvFotoDetail"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@id/tvFotoDetail"
+                    app:layout_constraintTop_toBottomOf="@id/tvFotoDetail" />
+
+                <TextView
+                    android:id="@+id/tvIdLevelDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/id_level_25464"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/tvIdSponsorDetail"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@id/tvIdSponsorDetail"
+                    app:layout_constraintTop_toBottomOf="@id/tvIdSponsorDetail" />
+
+                <TextView
+                    android:id="@+id/tvIdGudangDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/id_gudang_7"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/tvIdLevelDetail"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@id/tvIdLevelDetail"
+                    app:layout_constraintTop_toBottomOf="@id/tvIdLevelDetail" />
+
+                <TextView
+                    android:id="@+id/tvIdPaketDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/id_paket_pendaftaraan_99"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/tvIdGudangDetail"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@id/tvIdGudangDetail"
+                    app:layout_constraintTop_toBottomOf="@id/tvIdGudangDetail" />
+
+                <TextView
+                    android:id="@+id/tvPaketDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/paket_pendaftaraan_paket_myy"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/tvIdPaketDetail"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@id/tvIdPaketDetail"
+                    app:layout_constraintTop_toBottomOf="@id/tvIdPaketDetail" />
+
+                <TextView
+                    android:id="@+id/tvHargaPaketDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/harga_paket_pendaftaraan_rp_1_000_000"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/tvPaketDetail"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@id/tvPaketDetail"
+                    app:layout_constraintTop_toBottomOf="@id/tvPaketDetail" />
+
+                <TextView
+                    android:id="@+id/tvMetodeDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/metode_pembayaran_qris"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/tvHargaPaketDetail"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@id/tvHargaPaketDetail"
+                    app:layout_constraintTop_toBottomOf="@id/tvHargaPaketDetail" />
+
+                <TextView
+                    android:id="@+id/tvBuktiPembayaranDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/bukti_pembayaran_bear_jpg"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/tvMetodeDetail"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@id/tvMetodeDetail"
+                    app:layout_constraintTop_toBottomOf="@id/tvMetodeDetail" />
+
+                <TextView
+                    android:id="@+id/tvNilaiCrDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/nilai_cr_3847"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/tvBuktiPembayaranDetail"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@id/tvBuktiPembayaranDetail"
+                    app:layout_constraintTop_toBottomOf="@id/tvBuktiPembayaranDetail" />
+
+                <TextView
+                    android:id="@+id/tvNilaiCashbackDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/nilai_cashback_4779"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/tvNilaiCrDetail"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@id/tvNilaiCrDetail"
+                    app:layout_constraintTop_toBottomOf="@id/tvNilaiCrDetail" />
+
+                <TextView
+                    android:id="@+id/tvStatusDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/status_rich_guy"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/tvNilaiCashbackDetail"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@id/tvNilaiCashbackDetail"
+                    app:layout_constraintTop_toBottomOf="@id/tvNilaiCashbackDetail" />
+
+                <TextView
+                    android:id="@+id/tvNotelpDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/no_telp_0825651245326"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/tvStatusDetail"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@id/tvStatusDetail"
+                    app:layout_constraintTop_toBottomOf="@id/tvStatusDetail" />
+
+                <TextView
+                    android:id="@+id/tvEmailDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/email_marklovesfullsun_gmail_com"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/tvNotelpDetail"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@id/tvNotelpDetail"
+                    app:layout_constraintTop_toBottomOf="@id/tvNotelpDetail" />
+
+                <TextView
+                    android:id="@+id/tvPasswordDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/password_fullsunloaf"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/tvEmailDetail"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@id/tvEmailDetail"
+                    app:layout_constraintTop_toBottomOf="@id/tvEmailDetail" />
+
+                <TextView
+                    android:id="@+id/tvIdJabatanDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/id_jabatan_22"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/tvPasswordDetail"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@id/tvPasswordDetail"
+                    app:layout_constraintTop_toBottomOf="@id/tvPasswordDetail" />
+
+                <TextView
+                    android:id="@+id/tvPunyaDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/punya_alat_punya"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/tvIdJabatanDetail"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@id/tvIdJabatanDetail"
+                    app:layout_constraintTop_toBottomOf="@id/tvIdJabatanDetail" />
+
+                <TextView
+                    android:id="@+id/tvPunyaNpwpDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/punya_npwp_punya"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/tvPunyaDetail"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@id/tvPunyaDetail"
+                    app:layout_constraintTop_toBottomOf="@id/tvPunyaDetail" />
+
+                <TextView
+                    android:id="@+id/tvIdBankDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/id_bank_64753287822"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/tvPunyaNpwpDetail"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@id/tvPunyaNpwpDetail"
+                    app:layout_constraintTop_toBottomOf="@id/tvPunyaNpwpDetail" />
+
+                <TextView
+                    android:id="@+id/tvNamaBankDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/nama_bank_bsi"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/tvIdBankDetail"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@id/tvIdBankDetail"
+                    app:layout_constraintTop_toBottomOf="@id/tvIdBankDetail" />
+
+                <TextView
+                    android:id="@+id/tvNorekDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/nomor_rekening_bank_37473254625462"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/tvNamaBankDetail"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@id/tvNamaBankDetail"
+                    app:layout_constraintTop_toBottomOf="@id/tvNamaBankDetail" />
+
+                <TextView
+                    android:id="@+id/tvKartuDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/kartu_member_markmember_jpg"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/tvNorekDetail"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@id/tvNorekDetail"
+                    app:layout_constraintTop_toBottomOf="@id/tvNorekDetail" />
+
+                <TextView
+                    android:id="@+id/tvBiografiDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/biografi_a_man_who_fall_in_love_with_his_job"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/tvKartuDetail"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@id/tvKartuDetail"
+                    app:layout_constraintTop_toBottomOf="@id/tvKartuDetail" />
+
+                <TextView
+                    android:id="@+id/tvVvipDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/vvip_status_1"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/tvBiografiDetail"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@id/tvBiografiDetail"
+                    app:layout_constraintTop_toBottomOf="@id/tvBiografiDetail" />
+
+                <TextView
+                    android:id="@+id/tvCheckDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/check_cha_2435"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/tvVvipDetail"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@id/tvVvipDetail"
+                    app:layout_constraintTop_toBottomOf="@id/tvVvipDetail" />
+
+                <TextView
+                    android:id="@+id/tvJatahDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/jatah_upload_37221"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/tvCheckDetail"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@id/tvCheckDetail"
+                    app:layout_constraintTop_toBottomOf="@id/tvCheckDetail" />
+
+                <TextView
+                    android:id="@+id/tvActiveDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/active_active"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/tvJatahDetail"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@id/tvJatahDetail"
+                    app:layout_constraintTop_toBottomOf="@id/tvJatahDetail" />
+
+                <TextView
+                    android:id="@+id/tvUserCreateDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/user_create_17_09_2022"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/tvActiveDetail"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@id/tvActiveDetail"
+                    app:layout_constraintTop_toBottomOf="@id/tvActiveDetail" />
+
+                <TextView
+                    android:id="@+id/tvTimeCreateDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/time_create_17_09_2022"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/tvUserCreateDetail"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@id/tvUserCreateDetail"
+                    app:layout_constraintTop_toBottomOf="@id/tvUserCreateDetail" />
+
+                <TextView
+                    android:id="@+id/tvTimeUpdateDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/time_updat_e_19_09_2022"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/tvTimeCreateDetail"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@id/tvTimeCreateDetail"
+                    app:layout_constraintTop_toBottomOf="@id/tvTimeCreateDetail" />
+
+                <TextView
+                    android:id="@+id/tvUserUpdateDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/user_update_19_09_2022"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@id/tvTimeUpdateDetail"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@id/tvTimeUpdateDetail"
+                    app:layout_constraintTop_toBottomOf="@id/tvTimeUpdateDetail" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

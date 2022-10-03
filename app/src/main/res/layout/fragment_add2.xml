@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.Add1Fragment">
+    tools:context=".fragment.Add2Fragment">
 
 
     <ImageButton
@@ -236,7 +236,7 @@
         tools:ignore="TextFields" />
 
     <TextView
-        android:id="@+id/tvSelanjutnyaSc"
+        android:id="@+id/tvSelanjutnyaSecond"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"

@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MemberData">
         <activity
+            android:name=".Activity.EditDataActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activity.ProfileActivity"
             android:exported="false" />
         <activity

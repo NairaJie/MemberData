@@ -17,10 +17,11 @@ class Add2Fragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_add2, container, false)
-        val button = view.findViewById<Button>(R.id.tvSelanjutnyaSc)
+        val button = view.findViewById<Button>(R.id.tvSelanjutnyaSecond)
         button.setOnClickListener {
             findNavController().navigate(R.id.action_add2Fragment_to_add3Fragment)
         }
+
         return view
 
     }

@@ -21,6 +21,7 @@ class Add3Fragment : Fragment() {
         button.setOnClickListener {
             findNavController().navigate(R.id.action_add3Fragment_to_add4Fragment)
         }
+
         return view
 
     }
