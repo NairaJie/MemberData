@@ -7,7 +7,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.isjieman.memberdata.MainActivity
-import com.isjieman.memberdata.R
 import com.isjieman.memberdata.databinding.FragmentAdd7Binding
 
 class Add7Fragment : Fragment() {
@@ -18,7 +17,7 @@ class Add7Fragment : Fragment() {
     ): View? {
         val bind = FragmentAdd7Binding.inflate(layoutInflater)
 
-        bind.btnLeftSeventh.setOnClickListener{
+        bind.btnSubmit.setOnClickListener{
             val intent = Intent(this@Add7Fragment.requireContext(), MainActivity::class.java)
             startActivity(intent)
         }

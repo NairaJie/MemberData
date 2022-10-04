@@ -49,7 +49,7 @@
 
     <EditText
         android:id="@+id/etTanggalLahir"
-        android:layout_width="360dp"
+        android:layout_width="345dp"
         android:layout_height="48dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/bg_btn_shadow"
@@ -72,7 +72,7 @@
         android:id="@+id/tvJenisKelamin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="10dp"
         android:text="@string/jenis_kelamin"
         android:textColor="@color/black"
         android:textSize="16sp"
@@ -106,8 +106,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvJenisKelamin"
         app:layout_constraintVertical_bias="0.0" />
 
-
-        <TextView
+    <TextView
         android:id="@+id/tvTanggalBergabung"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -122,7 +121,7 @@
 
     <EditText
         android:id="@+id/etTanggalBergabung"
-        android:layout_width="360dp"
+        android:layout_width="345dp"
         android:layout_height="48dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/bg_btn_shadow"
@@ -182,7 +181,7 @@
 
     <EditText
         android:id="@+id/etJenisDokumen"
-        android:layout_width="360dp"
+        android:layout_width="345dp"
         android:layout_height="48dp"
         android:layout_marginTop="8dp"
         android:autofillHints="name"
@@ -206,7 +205,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="No ID Dokumen"
+        android:text="@string/no_id_dokumen"
         android:textSize="16sp"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="@+id/etJenisDokumen"
@@ -216,7 +215,7 @@
 
     <EditText
         android:id="@+id/etNoIdDokumen"
-        android:layout_width="360dp"
+        android:layout_width="345dp"
         android:layout_height="48dp"
         android:layout_marginTop="8dp"
         android:autofillHints="name"
@@ -239,7 +238,7 @@
         android:id="@+id/tvSelanjutnyaSecond"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="44dp"
         android:text="@string/selanjutnya"
         android:textColor="@color/purple_500"
         android:textSize="18sp"

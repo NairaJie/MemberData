@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import com.isjieman.memberdata.R
 
@@ -17,10 +18,13 @@ class Add3Fragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_add3, container, false)
-        val button = view.findViewById<Button>(R.id.tvSelanjutnyaThird)
-        button.setOnClickListener {
-            findNavController().navigate(R.id.action_add3Fragment_to_add4Fragment)
+        view.findViewById<View>(R.id.tvSelanjutnyaThird).setOnClickListener{
+            Navigation.findNavController(view).navigate(R.id.action_add3Fragment_to_add4Fragment)
         }
+//        val button = view.findViewById<Button>(R.id.tvSelanjutnyaThird)
+//        button.setOnClickListener {
+//            findNavController().navigate(R.id.action_add3Fragment_to_add4Fragment)
+//        }
 
         return view
 

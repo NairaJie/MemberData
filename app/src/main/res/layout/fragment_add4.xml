@@ -49,7 +49,7 @@
 
     <EditText
         android:id="@+id/etMetodePembayaran"
-        android:layout_width="360dp"
+        android:layout_width="345dp"
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/bg_btn_shadow"
@@ -67,7 +67,6 @@
         app:layout_constraintStart_toStartOf="@+id/tvMetodePembayaran"
         app:layout_constraintTop_toBottomOf="@+id/tvMetodePembayaran"
         tools:ignore="TextFields" />
-
 
     <TextView
         android:id="@+id/tvBuktiPembayaran"
@@ -95,7 +94,6 @@
         app:layout_constraintTop_toBottomOf="@id/tvBuktiPembayaran"
         tools:ignore="SmallSp" />
 
-
     <TextView
         android:id="@+id/tvNilaiCr"
         android:layout_width="wrap_content"
@@ -111,7 +109,7 @@
 
     <EditText
         android:id="@+id/etNilaiCr"
-        android:layout_width="360dp"
+        android:layout_width="345dp"
         android:layout_height="48dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/bg_btn_shadow"
@@ -145,14 +143,14 @@
 
     <EditText
         android:id="@+id/etNilaiCashback"
-        android:layout_width="360dp"
+        android:layout_width="345dp"
         android:layout_height="48dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/bg_btn_shadow"
         android:drawablePadding="16dp"
         android:ems="10"
         android:autofillHints="name"
-        android:hint="ketik nilai cashback"
+        android:hint="@string/ketik_nilai_cashback"
         android:inputType="text"
         android:paddingStart="20dp"
         android:textColorHint="#546E7A"
@@ -179,7 +177,7 @@
 
     <EditText
         android:id="@+id/etStatus"
-        android:layout_width="360dp"
+        android:layout_width="345dp"
         android:layout_height="48dp"
         android:layout_marginTop="8dp"
         android:autofillHints="name"
@@ -213,7 +211,7 @@
 
     <EditText
         android:id="@+id/etNoTelp"
-        android:layout_width="360dp"
+        android:layout_width="345dp"
         android:layout_height="48dp"
         android:layout_marginTop="8dp"
         android:autofillHints="name"

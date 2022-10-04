@@ -62,7 +62,7 @@
         app:layout_constraintTop_toBottomOf="@id/tvFotoDokumen"
         tools:ignore="SmallSp" />
 
-     <TextView
+    <TextView
         android:id="@+id/tvIdSponsor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -77,14 +77,14 @@
 
     <EditText
         android:id="@+id/etIdSponsor"
-        android:layout_width="360dp"
+        android:layout_width="345dp"
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/bg_btn_shadow"
         android:drawablePadding="8dp"
         android:ems="10"
         android:autofillHints="name"
-        android:hint="ketik ID Sponsor"
+        android:hint="@string/ketik_id_sponsor"
         android:inputType="text"
         android:textColorHint="#546E7A"
         android:paddingStart="20dp"
@@ -111,7 +111,7 @@
 
     <EditText
         android:id="@+id/etIdLevel"
-        android:layout_width="360dp"
+        android:layout_width="345dp"
         android:layout_height="48dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/bg_btn_shadow"
@@ -145,14 +145,14 @@
 
     <EditText
         android:id="@+id/etIdGudang"
-        android:layout_width="360dp"
+        android:layout_width="345dp"
         android:layout_height="48dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/bg_btn_shadow"
         android:drawablePadding="16dp"
         android:ems="10"
         android:autofillHints="name"
-        android:hint="ketik ID Gudang"
+        android:hint="@string/ketik_id_gudang"
         android:inputType="text"
         android:paddingStart="20dp"
         android:textColorHint="#546E7A"
@@ -169,7 +169,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="ID Paket Pendaftaran"
+        android:text="@string/id_paket_pendaftaran"
         android:textSize="16sp"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="@+id/etIdGudang"
@@ -179,7 +179,7 @@
 
     <EditText
         android:id="@+id/etIdPaketPendaftaran"
-        android:layout_width="360dp"
+        android:layout_width="345dp"
         android:layout_height="48dp"
         android:layout_marginTop="8dp"
         android:autofillHints="name"
@@ -203,7 +203,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Paket Pendaftaran"
+        android:text="@string/paket_pendaftaran"
         android:textSize="16sp"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="@+id/etIdPaketPendaftaran"
@@ -213,14 +213,14 @@
 
     <EditText
         android:id="@+id/etPaketPedaftaran"
-        android:layout_width="360dp"
+        android:layout_width="345dp"
         android:layout_height="48dp"
         android:layout_marginTop="8dp"
         android:autofillHints="name"
         android:background="@drawable/bg_btn_shadow"
         android:drawablePadding="16dp"
         android:ems="10"
-        android:hint="ketik paket pendaftaran"
+        android:hint="@string/ketik_paket_pendaftaran"
         android:inputType="text"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"

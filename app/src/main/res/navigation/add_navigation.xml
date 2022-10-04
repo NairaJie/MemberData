@@ -23,6 +23,7 @@
             android:id="@+id/action_add2Fragment_to_add3Fragment"
             app:destination="@id/add3Fragment" />
     </fragment>
+
     <fragment
         android:id="@+id/add3Fragment"
         android:name="com.isjieman.memberdata.fragment.Add3Fragment"

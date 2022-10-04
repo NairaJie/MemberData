@@ -110,15 +110,15 @@
     <string name="check_cha_2435">Check CHA: 2435</string>
     <string name="jatah_upload_37221">Jatah Upload: 37221</string>
     <string name="active_active">Active: Active</string>
-    <string name="user_create_17_09_2022">User Create: 17-09-2022</string>
-    <string name="time_create_17_09_2022">Time Create: 17-09-2022</string>
-    <string name="time_updat_e_19_09_2022">Time Updat e: 19-09-2022</string>
-    <string name="user_update_19_09_2022">User Update: 19-09-2022</string>
+    <string name="user_create_17_09_2022">User Create: 17,09,2022</string>
+    <string name="time_create_17_09_2022">Time Create: 17,09,2022</string>
+    <string name="time_updat_e_19_09_2022">Time Updat e: 19,09,2022</string>
+    <string name="user_update_19_09_2022">User Update: 19,09,2022</string>
     <string name="nilai_cashback_4779">Nilai Cashback: 4779</string>
     <string name="tempat_lahir_canada">Tempat Lahir: Canada</string>
-    <string name="tanggal_lahir_02_08_1999">Tanggal Lahir: 02-08-1999</string>
+    <string name="tanggal_lahir_02_08_1999">Tanggal Lahir: 02,08,1999</string>
     <string name="jenis_kelamin_laki_laki">Jenis Kelamin: Laki-laki</string>
-    <string name="tanggal_bergabung_28_05_2022">Tanggal Bergabung: 28-05-2022</string>
+    <string name="tanggal_bergabung_28_05_2022">Tanggal Bergabung: 28,05,2022</string>
     <string name="foto_mark_jpg">Foto: Mark.jpg</string>
     <string name="id_sponsor_25467254">ID Sponsor: 25467254</string>
     <string name="id_level_25464">ID Level: 25464</string>
@@ -129,4 +129,13 @@
     <string name="metode_pembayaran_qris">Metode Pembayaran: Qris</string>
     <string name="bukti_pembayaran_bear_jpg">Bukti Pembayaran: Bear.jpg</string>
     <string name="nilai_cr_3847">Nilai Cr: 3847</string>
+    <string name="no_id_dokumen">No ID Dokumen</string>
+    <string name="ketik_id_sponsor">ketik ID Sponsor</string>
+    <string name="ketik_id_gudang">ketik ID Gudang</string>
+    <string name="id_paket_pendaftaran">ID Paket Pendaftaran</string>
+    <string name="paket_pendaftaran">Paket Pendaftaran</string>
+    <string name="ketik_paket_pendaftaran">ketik paket pendaftaran</string>
+    <string name="ketik_nilai_cashback">ketik nilai cashback</string>
+    <string name="ketik_check_cha">ketik check cha</string>
+    <string name="biografi">Biografi</string>
 </resources>

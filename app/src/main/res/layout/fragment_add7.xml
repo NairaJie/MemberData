@@ -49,7 +49,7 @@
 
     <EditText
         android:id="@+id/etJatah"
-        android:layout_width="360dp"
+        android:layout_width="345dp"
         android:layout_height="48dp"
         android:layout_marginTop="7dp"
         android:autofillHints="name"
@@ -83,7 +83,7 @@
 
     <EditText
         android:id="@+id/etActive"
-        android:layout_width="360dp"
+        android:layout_width="345dp"
         android:layout_height="48dp"
         android:layout_marginTop="7dp"
         android:background="@drawable/bg_btn_shadow"
@@ -117,7 +117,7 @@
 
     <EditText
         android:id="@+id/etUserCreate"
-        android:layout_width="360dp"
+        android:layout_width="345dp"
         android:layout_height="48dp"
         android:layout_marginTop="7dp"
         android:background="@drawable/bg_btn_shadow"
@@ -151,7 +151,7 @@
 
     <EditText
         android:id="@+id/etTimeCreate"
-        android:layout_width="360dp"
+        android:layout_width="345dp"
         android:layout_height="48dp"
         android:layout_marginTop="7dp"
         android:background="@drawable/bg_btn_shadow"
@@ -185,7 +185,7 @@
 
     <EditText
         android:id="@+id/etUserUpdate"
-        android:layout_width="360dp"
+        android:layout_width="345dp"
         android:layout_height="48dp"
         android:layout_marginTop="7dp"
         android:autofillHints="name"
@@ -219,7 +219,7 @@
 
     <EditText
         android:id="@+id/etTimeUpdate"
-        android:layout_width="360dp"
+        android:layout_width="345dp"
         android:layout_height="48dp"
         android:layout_marginTop="7dp"
         android:autofillHints="name"
@@ -241,7 +241,7 @@
     <Button
         android:id="@+id/btnSubmit"
         android:layout_width="300dp"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:layout_marginTop="24dp"
         android:text="@string/submit"
         android:textAllCaps="false"
